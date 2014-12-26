@@ -1,0 +1,412 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#wrap
+{
+	float: left;
+	width: 100%;
+	background: #EDF1F1;
+}
+
+	.col-left
+	{
+		float: left;
+		width: 435px;
+	}
+	
+		.col-left .title
+		{
+			float: left;
+			background: #896B5F;
+			width: 100%;
+		}
+		
+			.col-left .title img
+			{
+				float: left;
+			}
+				
+			.col-left .title h2
+			{
+				font: 18px 'Open Sans';
+				color: #fff;
+				text-transform: uppercase;
+				float: left;
+				margin: 0 28px 0 20px;
+				padding: 0;
+				line-height: 26px;
+			}
+			
+		.col-left .desc
+		{
+			float: left;
+			background: #D4D8D9;
+			padding: 20px 0;
+			width: 100%;
+		}
+		
+			.col-left .desc .img
+		    {
+				float: left;
+				display: block;
+		    	height: 133px;
+		    }
+		    
+		    	.col-left .desc .img img
+				{
+					margin: 30px 15px;
+					display: block;
+				}
+		    
+		    .col-left .desc h2
+		    {
+				font: 18px 'Open Sans';
+				color: #59463F;
+				text-transform: uppercase;
+		    }
+		    
+		    .col-left .desc span
+		    {
+				font: 15px 'Open Sans';
+		    	color: #59463F;
+		    }
+
+	.col-left .thumbs
+	{
+		float: left;
+		width: 100%;
+	}	 
+	
+	.col-left .pagination
+	{
+		float: left;
+		width: 99%;
+	}
+	
+		.col-left .pagination ul
+		{
+			float: left;
+			margin: 0 0 10px 10px;
+			padding: 0;
+			list-style: none;
+		}
+		
+			.col-left .pagination li
+			{
+				float: left;
+				margin-right: 10px;
+				background: #A5A5A5;
+			}
+			
+			.col-left .pagination li a
+			{
+				display: block;
+				padding: 4px 8px;
+				font: bold 11px 'Arial';
+				color: #fff;
+				text-decoration: none;
+			}
+			
+				.col-left .pagination li:hover
+				{	
+					background: #717171;
+				}
+			
+			.col-left .pagination li.inactive
+			{
+				display: block;
+				padding: 4px 8px;
+				font: bold 11px 'Arial';
+				color: #fff;
+				text-decoration: none;
+			}
+			
+				.col-left .pagination li.inactive:hover
+				{
+					background: #A5A5A5;
+				}
+				
+					.col-left .pagination li.inactive a
+					{
+						cursor: default;
+					}
+				
+			.col-left .pagination li.active
+			{
+				background: #717171;
+			}
+	
+		.col-left .thumbs .thumbs-inner
+		{
+			float: left;
+			margin: 20px 0 0 10px;
+			height: 410px;
+		}
+		
+			.col-left .thumbs .thumbs-inner .thumb-block
+			{
+				width: 171px;
+				padding: 12px;
+				background: #fff;
+				float: left;
+				margin-right: 15px;
+				margin-bottom: 17px;
+				cursor: pointer;
+			}
+			
+				.col-left .thumbs .thumbs-inner .thumb-block.odd
+				{
+					margin-right: 0;
+				}
+			
+				.col-left .thumbs .thumbs-inner .thumb-block img
+				{
+					width: 163px;
+					height: 163px;
+					display: block;
+					margin: 0 auto;
+				}
+			
+	.col-right
+	{
+		float: left;
+		width: 640px;
+	}
+	
+		.col-right #gmap
+		{
+			float: left;
+			width: 100%;
+			height: 631px;
+		}
+		
+			.col-right #gmap .marker-image
+			{
+				width: 440px;
+				height: 440px;
+			}
+
+/* jsCrollPane */
+.jspVerticalBar
+{
+	width: 10px;
+}
+
+.jspDrag
+{
+	background: #B1B1B1;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
